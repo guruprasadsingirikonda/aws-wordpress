@@ -22,9 +22,12 @@ git clone  git@github.com:guruprasadsingirikonda/aws-wordpress.git
 
 cd aws-wordpress
 
- #Create new KeyPair on AWS CLI and name it aws-key1 and
+#Create new KeyPair on AWS CLI and name it aws-key1 and
 
-cp ~/Downloads/aws-key1.pem ./
+cd ~/Downloads/awsblog.pem 
+
+#Change the permissions of download keypair  
+
 chmod 400 awsblog.pem
 
 #On AWS CLI, Create a new user with programatic access which will generate a new Access Key & Secret. With that
