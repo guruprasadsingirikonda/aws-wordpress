@@ -33,6 +33,7 @@ chmod 400 awsblog.pem
 #On AWS CLI, Create a new user with programatic access which will generate a new Access Key & Secret. With that
 
 aws configure --profile demoapp
+
 #Make sure to use the region name (us-west-2 or another) as the default for this profile 'demoapp'
 
 
@@ -40,7 +41,7 @@ aws cloudformation create-stack --profile demoapp --stack-name blog-stage --temp
 
 #After the stack creation is successful, Get the IP address or DNS of the AppNode EC2 instance
 
-ssh -i aws-key1.pem ubuntu@<IP ADDRESS OR DNS OF THE EC2 INSTANCE>
+ssh -i awsblog.pem ubuntu@<IP ADDRESS OR DNS OF THE EC2 INSTANCE>
 
 #Point your local to EC2 instance
 
