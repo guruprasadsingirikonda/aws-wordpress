@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      DB_USER: guruprasad
+      DB_NAME: gurublog
+      DB_PASSWORD: guruprasad123
+      DB_HOST: bd4nc7mpnpkujo.cmio8ddtjdkj.us-west-2.rds.amazonaws.com
