@@ -41,7 +41,7 @@ aws cloudformation create-stack --profile demoapp --stack-name blog-stage --temp
 
 #After the stack creation is successful, Get the IP address or DNS of the AppNode EC2 instance
 
-ssh -i awsblog.pem ubuntu@<IP ADDRESS OR DNS OF THE EC2 INSTANCE>
+ssh -i awsblog.pem ubuntu@IP ADDRESS OR DNS OF THE EC2 INSTANCE
 
 #Point your local to EC2 instance
 
