@@ -22,7 +22,7 @@ git clone  git@github.com:guruprasadsingirikonda/aws-wordpress.git
 
 cd aws-wordpress
 
-#Create new KeyPair on AWS CLI and name it aws-key1 and
+#Create new KeyPair on AWS CLI and name it awsblog and
 
 cd ~/Downloads/awsblog.pem 
 
@@ -45,11 +45,14 @@ ssh -i awsblog.pem ubuntu@<IP ADDRESS OR DNS OF THE EC2 INSTANCE>
 
 #Point your local to EC2 instance
 
-export DOCKER_HOST=tcp://<Ec2Ip>:2375
+export DOCKER_HOST=tcp://213.29.1.23:2375
+
+#To list the containers
+
 docker ps -a
 
-docker-compose -f app.yml run --rm app rails db:migrate
 docker-compose -f app.yml up -d
+
 docker-compose -f app.yml ps
  
     
