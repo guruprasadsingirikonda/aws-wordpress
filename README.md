@@ -1,8 +1,8 @@
-    AWS CloudFormation with EC2 RDS and Docker App
+AWS CloudFormation with EC2 RDS and Docker App
     
     
     
-    Setup AWSCLI console
+ Setup AWSCLI console
 
  1. Login to AWS Management Console and Generate a new KeyPair. Save the downloaded key
  2. Configure AWS Command Line Interface (AWS CLI) with a new AWS Access Key and a secret generated on AWS  
@@ -14,7 +14,7 @@
  
  
  
-  Commands
+Commands
 
 mkdir ~/aws-wordpress
 git clone deploy-aws
